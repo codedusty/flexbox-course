@@ -5,15 +5,15 @@
     <meta charset='UTF-8'>
     <title></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
         crossorigin="anonymous"></script>
 
     <style>
         body {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 8px;
+            font-family: 'Lato', sans-serif;
         }
 
         .container {
@@ -27,7 +27,7 @@
             border: 1px solid grey;
             border-radius: 5px;
             margin: 10px;
-       }
+        }
 
         .container .item .content {
             display: flex;
@@ -44,19 +44,43 @@
             margin: 0px;
         }
 
-        .container .item .btn-group {}
+        .container .item .btn-group {
+            display: flex;
+            align-items: flex-end;
+            align-items: center;
+        }
 
-        .container .item .btn-group .button {}
+        .container .item .btn-group .button {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 42px;
+            justify-content: center;
+            font-size: 2em;
+        }
 
-        .container .item .btn-group .button a {}
+        .container .item .btn-group .button a {
+            color: lightseagreen;
+            text-decoration: none;
+        }
 
-        .container .item .btn-group .button:hover {}
+        .container .item .btn-group .button:hover {
+            background-color: lightslategray;
+            cursor: pointer;
+        }
 
-        .container .item .btn-group .button:hover a {}
+        .container .item .btn-group .button:hover a {
+            color: white;
+        }
 
-        .item.featured {}
+        .item.featured {
+            flex: auto;
+        }
 
-        .item.associated {}
+        .item.associated {
+            flex: initial;
+        }
     </style>
 </head>
 
@@ -65,7 +89,7 @@
     <div class='container'>
         <div class='item featured'>
             <div class='content'>
-                <img src='https://d33xj74kbqkoqn.cloudfront.net/uploads/campsite/campsite_image/129/dissecting-rails-icon.jpg' width='200px'
+                <img src='https://d32xj74kbqkoqn.cloudfront.net/uploads/campsite/campsite_image/129/dissecting-rails-icon.jpg' width='200px'
                     height='120px'>
                 <div class='metadata'>
                     <h1 class='title'>My amazing title</h1>
